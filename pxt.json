@@ -1,0 +1,48 @@
+{
+    "name": "SIMONGAME - Copy",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "pxt-lanterns": "github:WoofWoofCodes/lanterns#v1.1.0",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.12.61",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj",
+    "palette": [
+        "#000000",
+        "#AA7942",
+        "#612E20",
+        "#572E1A",
+        "#775c4f",
+        "#7E4A1E",
+        "#3C1903",
+        "#a19f7c",
+        "#606060",
+        "#65738c",
+        "#000000",
+        "#002E7A",
+        "#38571A",
+        "#77BB41",
+        "#00A3D7",
+        "#831100"
+    ]
+}

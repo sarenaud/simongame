@@ -1,0 +1,57 @@
+{
+    "image1": {
+        "data": "hwQOAA4AAADgzPzu/wAAAOC9s929/wAA4N07/d3SDwAA3N3d39L9AADw3d290vsAAPDb3b3S/QAA3N3d39L/AODdO/3d0v0A4L2z3S3d/wDgzPzuv/sAAAAAAADw+wAAAAAAsP/9AAAAAADw3fsAAAAAALD/DwAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "cat_maybe"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAAAD/gQAAAAAA8I8IAAAAAAD/jwCqAAAAADhTVaoAAACAOwNQAAAAAIA7U1UAAAAAgDsDqgoAEACAO6NVoGAREYA7o6CgYBERsTijVaBgFmZWBQCqCmBmNgUAAAAAAGY2AAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "mom"
+    },
+    "image4": {
+        "data": "hwQeAAoAAAAAAAD/AAAAAAAA8P8PAAAAAAD/+q8AAAAAAP//DwAAAAAA//+vAAAAAAD//w8AAAAAAPD/rwAAAAAAAP8AAAAAAADw/68AAAAAAP//DwAAAAAA//8PAAAAAADw/68AAAAAAAD/AAAAAAAA8P+vAAAAAAD//w8AAAAAAP//DwAAAAAA8P+vAAAAAAAA/wAAAAAAAPD/rwAAAAAA//8PAAAAAAD//w8AAAAAAPD/rwAAAAAAAP8AAAAAAADw/68AAAAAAP//DwAAAAAA//+vAAAAAAD//w8AAAAAAP//rwAAAAAA8P8PAAAAAAAA/wAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "tunnel worm"
+    },
+    "image5": {
+        "data": "hwQeAAoAAAAAAABmAAAAAAAAYGYGAAAAAABmb6YAAAAAAGZmBgAAAAAAZmamAAAAAABmZgYAAAAAAGBmpgAAAAAAAGYAAAAAAABgZqYAAAAAAGZmBgAAAAAAZmYGAAAAAABgZqYAAAAAAABmAAAAAAAAYGamAAAAAABmZgYAAAAAAGZmBgAAAAAAYGamAAAAAAAAZgAAAAAAAGBmpgAAAAAAZmYGAAAAAABmZgYAAAAAAGBmpgAAAAAAAGYAAAAAAABgZqYAAAAAAGZmBgAAAAAAZmamAAAAAABmZgYAAAAAAGZmpgAAAAAAYGYGAAAAAAAAZgAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "tunnel worm2"
+    },
+    "image7": {
+        "data": "hwQYABgAAAAAAAAAAAAAoAAAAAAAAAAAAAAAqqoKCgoAMwMAAKCqCgCqqqowMzMAAKqgAACgAAAzMzMDCgoAAAAAAAAzmTOjqgoAAAAAAACTmTkDAAAAAAAAAACTmTkDoAAKoAAKAAozmTOjqqqqqqqqqqozMzMDAAoACgqgoAAzozoDAAAAAAAAAAAzozoDoAAAAAAAoAAzozqjqqqqCgqgqqozMzMDCqCgqqqqAAozmTMDAAAAAKCgAACTmTkDAAAAAAAAAACTmTkDAAAAAAAAAAAzmTOjCgAAAAAACgozMzMDqgAAAKCgqqowMzMAoAoKqqqqAAAAMwMAAKqqqgAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "tall monster"
+    },
+    "image9": {
+        "data": "hwQeABAAAAAAEBEBAAAAAAAAEQAAAAAAAGZmZmYAAAAAZmZmZgAAMABmlmZmAwAwAGaZaWYzMzMAltmZZjAzAACW3Z1mAAAAAPb//2YAAAAAlt2dZgAAAACW2ZlmAAAAAGaZaWYAAAAAZpZmZgAAAABmZqZqAAAAAGZmpmoAAAAAZmamagAAAABmZmZmAAAAAGaWZmYAAAAAZplpZgAAAACW2ZlmAAAAAJbdnWYAAAAA9v//ZgAAAACW3Z1mAAAAAJbZmWYwMwAAZplpZjMzMwBmlmZmAwAwAGZmZmYAADAAZmZmZgAAAAAAEQAAAAAAABARAQAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "kind monster"
+    },
+    "image8": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAJICIiAgAAIAIgAAAAAAAgAiAAACAiIiAiIGBmZgAAIipmZmZmZgAiKmZmZmZmACAiIGBmZgAAIAIgAAAgIiIgAiAAAAAAAAAJICIiAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "bug eye monster"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAA//+/u/szE/Cvqr+7+xMR8f8fvwAAExHx//+/u/sAAQD//7+7+wAAAAAQAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "character"
+    },
+    "image6": {
+        "data": "hwQQABAAAAAAAAAAoKqqqgAAAACgAKqqAAAAYGYGAAAAAGBmZmYGAABgZmZmpmYAAGBmmWamZgAAZpaZafpqBgBmZpmm/2oGZmZmZqb/agYAZmZmpvpqBgBmZmlmpmYAAGBmmWZmZgAAYGaZZmYGAAAAZmlmZgAAAABgZmYAqqoAAAAAoKqqqg==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Cute monster"
+    },
+    "image10": {
+        "data": "hwQQABAAAADd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3T0zMzMzM909M0RERERE3TMz9PT/T089RDRERERERD30NDMzMzMzPfQ0MzMzMzM9RDRERERERN0zM/T0/09P3T0zRERERETd3T0zMzMzM93d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "doorSprite"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
