@@ -1,9 +1,4 @@
 {
-    "image1": {
-        "data": "hwQOAA4AAADgzPzu/wAAAOC9s929/wAA4N07/d3SDwAA3N3d39L9AADw3d290vsAAPDb3b3S/QAA3N3d39L/AODdO/3d0v0A4L2z3S3d/wDgzPzuv/sAAAAAAADw+wAAAAAAsP/9AAAAAADw3fsAAAAAALD/DwAA",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "cat_maybe"
-    },
     "image3": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAAAD/gQAAAAAA8I8IAAAAAAD/jwCqAAAAADhTVaoAAACAOwNQAAAAAIA7U1UAAAAAgDsDqgoAEACAO6NVoGAREYA7o6CgYBERsTijVaBgFmZWBQCqCmBmNgUAAAAAAGY2AAAAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
@@ -48,6 +43,11 @@
         "data": "hwQQABAAAADd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3T0zMzMzM909M0RERERE3TMz9PT/T089RDRERERERD30NDMzMzMzPfQ0MzMzMzM9RDRERERERN0zM/T0/09P3T0zRERERETd3T0zMzMzM93d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3Q==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "doorSprite"
+    },
+    "image1": {
+        "data": "hwQOAA4AAADgzPzu/wAAAOC9s929/wAA4N07/d3SDwAA3N3d39L9AADw3d290vsAAPDb3b3S/QAA3N3d39L/AODdO/3d0v0A4L2z3S3d/wDgzPzuv/sAAAAAAADw+wAAAAAAsP/9AAAAAADw3fsAAAAAALD/DwAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "cat_maybe"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
