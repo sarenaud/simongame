@@ -46,17 +46,21 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile23, function (sprite, locatio
         mySprite.vy = 75
     }
 })
-scene.onOverlapTile(SpriteKind.Player, myTiles.transparency16, function (sprite, location) {
-    if (level == 5) {
-        tiles.setCurrentTilemap(maps[6])
-        level = 6
-        mySprite.setScale(2, ScaleAnchor.Top)
-        tiles.placeOnTile(mySprite, tiles.getTileLocation(5, 13))
-    }
-})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
         mySprite.vy = -200
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile91, function (sprite, location) {
+    if (level == 5) {
+        tiles.setCurrentTilemap(maps[0])
+        mySprite.setPosition(1080, 345)
+        level = 0
+        controller.moveSprite(mySprite, 100, 0)
+        mysprite2.setPosition(1050, 345)
+        mySprite.ay = 1000
+        mySprite.setScale(1, ScaleAnchor.Middle)
+        spawnOverworldNPCs()
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile41, function (sprite, location) {
@@ -71,6 +75,20 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile41, function (sprite, locatio
         }
     }
 })
+function spawnOverworldNPCs () {
+    mysprite2 = sprites.create(assets.image`bug eye monster`, SpriteKind.npc)
+    mysprite2.setPosition(1050, 345)
+    mySprite3 = sprites.create(assets.image`bug eye monster`, SpriteKind.npc)
+    tiles.placeOnTile(mySprite3, tiles.getTileLocation(20, 31))
+    Mysprite_5 = sprites.create(assets.image`bug eye monster`, SpriteKind.npc)
+    tiles.placeOnTile(Mysprite_5, tiles.getTileLocation(34, 26))
+    MySprite6 = sprites.create(assets.image`bug eye monster`, SpriteKind.npc)
+    tiles.placeOnTile(MySprite6, tiles.getTileLocation(3, 21))
+    MySprite_7 = sprites.create(assets.image`bug eye monster`, SpriteKind.npc)
+    tiles.placeOnTile(MySprite_7, tiles.getTileLocation(42, 18))
+    doorNPC = sprites.create(assets.image`doorSprite`, SpriteKind.npc)
+    tiles.placeOnTile(doorNPC, tiles.getTileLocation(77, 55))
+}
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile86, function (sprite, location) {
     if (level == 2) {
         tiles.setCurrentTilemap(maps[0])
@@ -79,6 +97,15 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile86, function (sprite, locatio
         mySprite.setScale(1, ScaleAnchor.Middle)
         tiles.placeOnTile(mySprite, tiles.getTileLocation(35, 7))
         mySprite.ay = 1000
+        spawnOverworldNPCs()
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile94, function (sprite, location) {
+    if (level == 5) {
+        tiles.setCurrentTilemap(maps[6])
+        level = 6
+        mySprite.setScale(2, ScaleAnchor.Top)
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(5, 13))
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile38, function (sprite, location) {
@@ -112,7 +139,6 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile13, function (sprite, locatio
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.npc3, function (sprite, otherSprite) {
-    let NPC10: Sprite = null
     if (otherSprite == NPC10) {
         timer.throttle("action", 6000, function () {
             mysprite_4.sayText("Welcome to my store!", 2000, false)
@@ -123,6 +149,37 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.npc3, function (sprite, otherSpr
         timer.after(2000, function () {
             mysprite_4.sayText("So take what you want", 2000, false)
         })
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile96, function (sprite, location) {
+    if (level == 6) {
+        tiles.setCurrentTilemap(maps[5])
+        level = 5
+        mySprite.setScale(2, ScaleAnchor.Top)
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(5, 13))
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile100, function (sprite, location) {
+    if (level == 7) {
+        tiles.setCurrentTilemap(maps[0])
+        level = 0
+        controller.moveSprite(mySprite, 100, 0)
+        mySprite.setScale(1, ScaleAnchor.Middle)
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(19, 29))
+        mySprite.ay = 1000
+        spawnOverworldNPCs()
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile87, function (sprite, location) {
+    if (level == 3) {
+        tiles.setCurrentTilemap(maps[0])
+        mySprite.setPosition(685, 375)
+        level = 0
+        controller.moveSprite(mySprite, 100, 0)
+        mySprite.setScale(1, ScaleAnchor.Middle)
+        mysprite2.setPosition(1050, 345)
+        mySprite.ay = 1000
+        spawnOverworldNPCs()
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile37, function (sprite, location) {
@@ -137,6 +194,18 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile37, function (sprite, locatio
             mysprite_4 = sprites.create(assets.image`Cute monster`, SpriteKind.npc1)
             tiles.placeOnTile(mysprite_4, tiles.getTileLocation(11, 7))
         }
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile88, function (sprite, location) {
+    if (level == 4) {
+        tiles.setCurrentTilemap(maps[0])
+        mySprite.setPosition(690, 120)
+        level = 0
+        controller.moveSprite(mySprite, 100, 0)
+        mySprite.setScale(1, ScaleAnchor.Middle)
+        mysprite2.setPosition(1050, 345)
+        mySprite.ay = 1000
+        spawnOverworldNPCs()
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile42, function (sprite, location) {
@@ -170,15 +239,30 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile35, function (sprite, locatio
         }
     }
 })
-scene.onOverlapTile(SpriteKind.Player, myTiles.transparency16, function (sprite, location) {
-    multilights.removeLightSource(sprite)
-    multilights.addLightSource(
-    sprite,
-    30,
-    10,
-    2.5
-    )
-    mySprite.sayText("on", 2000, false)
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile98, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        if (level == 0) {
+            tiles.setCurrentTilemap(maps[7])
+            mySprite.setPosition(140, 350)
+            level = 7
+            controller.moveSprite(mySprite, 100, 100)
+            mySprite.ay = 0
+            mySprite.setScale(2, ScaleAnchor.Middle)
+            NPC10 = sprites.create(assets.image`cat_maybe`, SpriteKind.npc3)
+            tiles.placeOnTile(NPC10, tiles.getTileLocation(3, 2))
+        }
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile89, function (sprite, location) {
+    if (level == 14) {
+        tiles.setCurrentTilemap(maps[0])
+        level = 0
+        controller.moveSprite(mySprite, 100, 0)
+        mySprite.setScale(1, ScaleAnchor.Middle)
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(23, 29))
+        mySprite.ay = 1000
+        spawnOverworldNPCs()
+    }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.npc2, function (sprite, otherSprite) {
     if (otherSprite == NPC8) {
@@ -227,6 +311,17 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.npc2, function (sprite, otherSpr
         })
     }
 })
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile95, function (sprite, location) {
+    if (level == 7) {
+        tiles.setCurrentTilemap(maps[8])
+        level = 8
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(12, 3))
+    } else if (level == 8) {
+        tiles.setCurrentTilemap(maps[7])
+        level = 7
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(12, 3))
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile85, function (sprite, location) {
     if (level == 1) {
         tiles.setCurrentTilemap(maps[0])
@@ -269,12 +364,13 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile39, function (sprite, locatio
         }
     }
 })
+let mysprite_4: Sprite = null
+let NPC10: Sprite = null
+let NPC9: Sprite = null
+let NPC8: Sprite = null
 let MySprite_7: Sprite = null
 let MySprite6: Sprite = null
 let Mysprite_5: Sprite = null
-let mysprite_4: Sprite = null
-let NPC9: Sprite = null
-let NPC8: Sprite = null
 let doorNPC: Sprite = null
 let mySprite3: Sprite = null
 let mysprite2: Sprite = null
@@ -319,6 +415,12 @@ mySprite,
 forever(function () {
     if (level != 0) {
         sprites.destroyAllSpritesOfKind(SpriteKind.npc)
+    }
+    if (level != 5) {
+        sprites.destroyAllSpritesOfKind(SpriteKind.npc1)
+    }
+    if (level != 7) {
+        sprites.destroyAllSpritesOfKind(SpriteKind.npc3)
     }
 })
 forever(function () {
