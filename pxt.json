@@ -1,5 +1,5 @@
 {
-    "name": "SIMONGAME - Copy",
+    "name": "SIMONGAME - ACtUAL",
     "description": "",
     "dependencies": {
         "device": "*",
@@ -20,7 +20,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.40",
+        "target": "2.0.46",
         "targetId": "arcade"
     },
     "supportedTargets": [
