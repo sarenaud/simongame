@@ -200,7 +200,8 @@ aa.....aa....a.....aa...
 
     helpers._registerFactory("song", function(name: string) {
         switch(helpers.stringTrim(name)) {
-
+            case "song1":
+            case "Main Melody":return hex`0078000408020106001c00010a006400f401640000040000000000000000000000000000000002180000000c00030d11140c001400030d111414001c00030d1114`;
         }
         return null;
     })

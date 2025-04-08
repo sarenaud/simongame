@@ -442,6 +442,7 @@ mySprite,
 60,
 1
 )
+music.setVolume(20)
 forever(function () {
     if (level != 0) {
         sprites.destroyAllSpritesOfKind(SpriteKind.npc)
