@@ -4,7 +4,8 @@
     "dependencies": {
         "device": "*",
         "pxt-lanterns": "github:WoofWoofCodes/lanterns#v1.1.0",
-        "Timers": "github:microsoft/arcade-timers#v1.1.0"
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "ArcadeMIDI": "github:UnsignedArduino/ArcadeMIDI#af121437d59fd6b2cec54501ac437db1eaa766f5"
     },
     "files": [
         "main.blocks",
@@ -20,7 +21,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.48",
+        "target": "2.0.53",
         "targetId": "arcade"
     },
     "supportedTargets": [

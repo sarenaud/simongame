@@ -3,7 +3,21 @@ namespace SpriteKind {
     export const npc1 = SpriteKind.create()
     export const npc2 = SpriteKind.create()
     export const npc3 = SpriteKind.create()
+    export const lantern = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile80`, function (sprite, location) {
+    if (level == 12) {
+        tiles.setCurrentTilemap(maps[11])
+        level = 11
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(22, 3))
+    } else if (level == 11) {
+        tiles.setCurrentTilemap(maps[10])
+        level = 10
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(22, 3))
+    } else if (false) {
+    	
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile77`, function (sprite, location) {
     if (level == 7) {
         tiles.setCurrentTilemap(maps[0])
@@ -35,6 +49,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.npc, function (sprite, otherSpri
         timer.throttle("action", 5000, function () {
             doorNPC.sayText("DO NOT ENTER", 5000, false)
         })
+    }
+})
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
+        mySprite.vy = -200
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Door for house 3`, function (sprite, location) {
@@ -101,9 +120,15 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile24`, function (sprite, 
         }
     }
 })
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
-        mySprite.vy = -200
+scene.onOverlapTile(SpriteKind.Player, assets.tile`LightTile`, function (sprite, location) {
+    if (level == 10) {
+        multilights.removeLightSource(mySprite)
+        multilights.addLightSource(
+        mySprite,
+        2,
+        30,
+        2.5
+        )
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile4`, function (sprite, location) {
@@ -225,6 +250,17 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.npc1, function (sprite, otherSpr
         })
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`LightTileoff`, function (sprite, location) {
+    if (level == 10) {
+        multilights.removeLightSource(mySprite)
+        multilights.addLightSource(
+        mySprite,
+        2,
+        13,
+        2.5
+        )
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Door for house 1`, function (sprite, location) {
     if (level == 2) {
         tiles.setCurrentTilemap(maps[0])
@@ -242,6 +278,50 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile75`, function (sprite, 
         level = 5
         mySprite.setScale(2, ScaleAnchor.Top)
         tiles.placeOnTile(mySprite, tiles.getTileLocation(5, 13))
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`Up in the maze`, function (sprite, location) {
+    if (level == 10) {
+        tiles.setCurrentTilemap(maps[11])
+        level = 11
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 20))
+    } else if (level == 11) {
+        tiles.setCurrentTilemap(maps[12])
+        level = 12
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 20))
+    } else if (level == 12) {
+        tiles.setCurrentTilemap(maps[16])
+        level = 16
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 20))
+    } else if (level == 16) {
+        tiles.setCurrentTilemap(maps[17])
+        level = 17
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 44))
+        lantern1 = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.lantern)
+        tiles.placeOnTile(lantern1, tiles.getTileLocation(4, 42))
+        multilights.addLightSource(
+        lantern1,
+        4,
+        1,
+        2.5
+        )
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile27`, function (sprite, location) {
@@ -387,6 +467,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 let NPC9: Sprite = null
 let NPC8: Sprite = null
+let lantern1: Sprite = null
 let mysprite_4: Sprite = null
 let NPC10: Sprite = null
 let Enemy9: Sprite = null
@@ -423,7 +504,9 @@ tilemap`maze 2`,
 tilemap`maze 3`,
 tilemap`Armory`,
 tilemap`House0`,
-tilemap`Store0`
+tilemap`Store0`,
+tilemap`Maze boss level`,
+tilemap`Ultimate Maze`
 ]
 tiles.setCurrentTilemap(maps[1])
 level = 1
@@ -453,7 +536,10 @@ forever(function () {
     if (level != 7) {
         sprites.destroyAllSpritesOfKind(SpriteKind.npc3)
     }
+    if (level != 10) {
+        sprites.destroyAllSpritesOfKind(SpriteKind.npc2)
+    }
 })
 forever(function () {
-	
+    mySprite.sayText(level)
 })
