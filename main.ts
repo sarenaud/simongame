@@ -6,6 +6,17 @@ namespace SpriteKind {
     export const lantern = SpriteKind.create()
     export const darkLantern = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`lightOff`, function (sprite, location) {
+    if (level == 16) {
+        multilights.removeLightSource(mySprite)
+        multilights.addLightSource(
+        mySprite,
+        2,
+        13,
+        2.5
+        )
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile80`, function (sprite, location) {
     if (level == 12) {
         tiles.setCurrentTilemap(maps[11])
@@ -93,22 +104,40 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Dirt3`, function (sprite, loc
         doorNPC = sprites.create(assets.image`doorSprite`, SpriteKind.npc)
         tiles.placeOnTile(doorNPC, tiles.getTileLocation(77, 55))
         Enemy1 = sprites.create(assets.image`tunnel worm`, SpriteKind.Enemy)
+        statusbar2 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar2.attachToSprite(Enemy1)
         tiles.placeOnTile(Enemy1, tiles.getTileLocation(28, 54))
         Enemy2 = sprites.create(assets.image`tunnel worm2`, SpriteKind.Enemy)
+        statusbar3 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar3.attachToSprite(Enemy2)
         tiles.placeOnTile(Enemy2, tiles.getTileLocation(32, 54))
         Enemy3 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+        statusbar4 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar4.attachToSprite(Enemy3)
         tiles.placeOnTile(Enemy3, tiles.getTileLocation(43, 51))
         Enemy4 = sprites.create(assets.image`kind monster`, SpriteKind.Enemy)
+        statusbar5 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar5.attachToSprite(Enemy4)
         tiles.placeOnTile(Enemy4, tiles.getTileLocation(57, 45))
         Enemy5 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+        statusbar6 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar6.attachToSprite(Enemy5)
         tiles.placeOnTile(Enemy5, tiles.getTileLocation(27, 60))
         Enemy6 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+        statusbar7 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar7.attachToSprite(Enemy6)
         tiles.placeOnTile(Enemy6, tiles.getTileLocation(49, 51))
         Enemy7 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+        statusbar8 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar8.attachToSprite(Enemy7)
         tiles.placeOnTile(Enemy7, tiles.getTileLocation(46, 55))
         Enemy8 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+        statusbar9 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar9.attachToSprite(Enemy8)
         tiles.placeOnTile(Enemy8, tiles.getTileLocation(54, 39))
         Enemy9 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+        statusbar10 = statusbars.create(20, 4, StatusBarKind.Health)
+        statusbar10.attachToSprite(Enemy9)
         tiles.placeOnTile(Enemy9, tiles.getTileLocation(68, 39))
     }
 })
@@ -325,6 +354,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Up in the maze`, function (sp
         tiles.setCurrentTilemap(maps[16])
         level = 16
         tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 20))
+        multilights.addLightSource(
+        mySprite,
+        25,
+        1,
+        2.5
+        )
     } else if (level == 16) {
         tiles.setCurrentTilemap(maps[17])
         level = 17
@@ -715,6 +750,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Up in the maze`, function (sp
         tiles.placeOnTile(mySprite, tiles.getTileLocation(79, 44))
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`lightOn`, function (sprite, location) {
+    if (level == 16) {
+        multilights.removeLightSource(mySprite)
+        multilights.addLightSource(
+        mySprite,
+        2,
+        30,
+        2.5
+        )
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile27`, function (sprite, location) {
     if (controller.B.isPressed()) {
         if (level == 0) {
@@ -880,14 +926,23 @@ let lantern2: Sprite = null
 let lantern1: Sprite = null
 let mysprite_4: Sprite = null
 let NPC10: Sprite = null
+let statusbar10: StatusBarSprite = null
 let Enemy9: Sprite = null
+let statusbar9: StatusBarSprite = null
 let Enemy8: Sprite = null
+let statusbar8: StatusBarSprite = null
 let Enemy7: Sprite = null
+let statusbar7: StatusBarSprite = null
 let Enemy6: Sprite = null
+let statusbar6: StatusBarSprite = null
 let Enemy5: Sprite = null
+let statusbar5: StatusBarSprite = null
 let Enemy4: Sprite = null
+let statusbar4: StatusBarSprite = null
 let Enemy3: Sprite = null
+let statusbar3: StatusBarSprite = null
 let Enemy2: Sprite = null
+let statusbar2: StatusBarSprite = null
 let Enemy1: Sprite = null
 let MySprite_7: Sprite = null
 let MySprite6: Sprite = null
@@ -936,6 +991,15 @@ mySprite,
 1
 )
 music.setVolume(20)
+let statusbar = statusbars.create(20, 4, StatusBarKind.Health)
+statusbar.setColor(12, 15)
+statusbar.setBarBorder(1, 11)
+statusbar.positionDirection(CollisionDirection.Bottom)
+statusbar.setBarSize(40, 4)
+statusbar.setOffsetPadding(-9, 10)
+statusbar.value = 80
+let MotherSprite = sprites.create(assets.image`mom`, SpriteKind.Player)
+MotherSprite.follow(mySprite)
 forever(function () {
     if (level != 0) {
         sprites.destroyAllSpritesOfKind(SpriteKind.npc)

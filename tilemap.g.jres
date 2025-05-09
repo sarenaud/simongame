@@ -682,6 +682,18 @@
         "tilemapTile": true,
         "displayName": "lantern0"
     },
+    "tile114": {
+        "data": "hwQQABAAAACIiIiIiIiIqIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "lightOn"
+    },
+    "tile115": {
+        "data": "hwQQABAAAACIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiKiIiIiIiIiA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "lightOff"
+    },
     "level11": {
         "id": "level11",
         "mimeType": "application/mkcd-tilemap",
@@ -1000,24 +1012,6 @@
         ],
         "displayName": "maze 3"
     },
-    "Maze boss level1": {
-        "id": "Maze boss level1",
-        "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxODAwMTgwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDMwMjAyMDIwMTAxMDIwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAyMDIwMjAyMDEwMjAyMDIwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDIwMjAyMDIwMTAyMDIwMTAxMDEwMTAxMDEwMTAxMDIwMjAyMDIwMjAxMDEwMjAyMDEwMjAyMDIwMTAyMDIwMTAxMDEwMTAxMDIwMjAxMDEwMjAyMDIwMTAxMDIwMjAyMDEwMjAyMDIwMTAyMDIwMTAxMDEwMjAyMDIwMjAyMDEwMTAyMDEwMTAyMDIwMjAyMDEwMjAyMDIwMjAyMDIwMTAxMDEwMjAyMDIwMjAyMDIwMTAxMDEwMjAyMDIwMjAxMDEwMTAyMDIwMjAyMDEwMTAxMDIwMjAyMDIwMjAyMDIwMTAxMDEwMjAyMDIwMjAxMDEwMTAxMDIwMjAxMDEwMTAxMDIwMjAyMDIwMjAyMDIwMTAxMDEwMjAyMDIwMjAxMDEwMTAxMDEwMTAxMDEwMTAxMDIwOTA1MDYwNzA4MDIwMjAxMDIwMjAyMDIwMTAxMDIwMjAyMDIwMjAxMDEwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAyMDIwMjAyMDIwMjAyMDEwMTAxMDIwMjAyMDIwMTAxMDEwMTAxMDEwMTAxMDEwMTAyMDIwMjAxMDIwMjAyMDEwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAxMDEwMTAyMDIwMjAyMDEwMjAyMDIwMTAxMDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDEwMTAxMDIwMjAyMDIwMTAyMDIwMTAxMDEwMTAyMDIwMjAyMDIwMjAyMDIwMjAyMDEwMTAxMDEwMjAyMDIwMTAyMDIwMTAxMDEwMTAxMDEwMTAxMDEwMTAyMDIwMjAyMDIwMjAyMDEwMjAyMDIwMTAyMDIwMTAxMDIwMjAyMDIwMjAyMDIwMjAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAyMDIwMTAxMDIwMjAxMDIwMjAyMDIwMjAyMDEwMjAyMDIwMjAyMDIwMjAyMDEwMjAyMDIwMTAxMDIwMjAxMDIwMjAyMDIwMjAyMDIwMTAxMDEwMTAxMDEwMTAxMDIwMjAyMDIwMTAxMDIwMjAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAxMDIwMjAxMDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDEwMTAxMDQwMjAxMDEwMTAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMDAwMDAyMDAyMDAyMjIyMjIyMjIyMjIyMDIwMDIwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMDAwMDIyMDIyMjIyMjAyMDAwMDIyMDAwMjAwMDIyMDIyMjIwMDIyMDAyMDAyMDAwMjAwMDIyMDIyMDAwMDIwMDIyMjAwMDAwMjAwMDAyMDIyMDAwMDAwMjIwMjAwMjAyMjAwMDAyMjAyMDAwMDAwMjIwMjAwMjAyMjAyMjAyMjAyMDAwMDAwMjIwMjAwMjAyMjIyMjIyMjAyMjIyMjAyMjAwMDAwMjIwMDAwMjAyMjAyMDAwMDAwMDAwMDAwMDIwMDAwMDAyMjAyMDAyMDIyMjIyMjIyMDIwMDAyMDAyMjAyMDAwMDAwMDAyMDIyMDIwMDIwMDAyMDIyMDAwMDAwMDAwMDIyMjIwMDAwMDIyMDIyMDIwMDAwMDAwMDIwMjIwMjAwMDIyMDIyMjIyMjIyMDIwMDAwMDAwMjAwMDIyMDAyMDAwMDAwMjAwMDAwMDAwMDAwMDIyMDAyMjAwMDAwMDAwMjAwMDAwMDIwMDAyMDAyMjAwMDAwMDAyMDIyMjIyMjAyMDAyMDAyMjAwMDAwMDAwMDAwMDAwMDAwMDAyMDAyMjAwMjAwMDAwMDAwMDAwMDAwMDAyMjAyMjAyMjAwMDAwMDAwMDAwMDAwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
-        "tileset": [
-            "myTiles.transparency16",
-            "myTiles.tile43",
-            "myTiles.tile78",
-            "myTiles.tile105",
-            "myTiles.tile106",
-            "myTiles.tile108",
-            "myTiles.tile109",
-            "myTiles.tile110",
-            "myTiles.tile111",
-            "myTiles.tile107"
-        ],
-        "displayName": "Maze boss level"
-    },
     "level10": {
         "id": "level10",
         "mimeType": "application/mkcd-tilemap",
@@ -1126,6 +1120,26 @@
             "myTiles.tile35"
         ],
         "displayName": "overworld"
+    },
+    "Maze boss level1": {
+        "id": "Maze boss level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxODAwMTgwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDMwMjAyMDIwMTAxMDIwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAyMDIwMjAyMDEwMjAyMDIwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDIwMjAyMDIwMTAyMDIwMTAxMDEwMTAxMDEwMTAxMDIwMjAyMDIwMjAxMDEwMjAyMDEwMjAyMDIwMTAyMDIwMTAxMDEwMTAxMDIwMjAxMDEwMjAyMDIwMTAxMDIwMjAyMDEwMjAyMDIwMTAyMDIwMTAxMDEwMjAyMDIwMjAyMDEwMTAyMDEwMTAyMDIwMjAyMDEwMjAyMDIwMjBiMDIwMTAxMDEwMjAyMDIwMjAyMDIwMTAxMDEwMjAyMDIwMjAxMDEwMTAyMDIwMjAyMDEwMTAxMDIwMjAyMDIwMjAyMDIwMTAxMDEwMjAyMDIwMjAxMDEwMTAxMDIwMjAxMDEwMTAxMDIwMjAyMDIwMjAyMDIwMTAxMDEwMjAyMDIwMjAxMDEwMTAxMDEwMTAxMDEwMTAxMDIwOTA1MDYwNzA4MDIwMjAxMDIwMjAyMDIwMTAxMDIwMjAyMDIwMjAxMDEwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAyMDIwMjAyMDIwMjAyMDEwMTAxMDIwMjAyMDIwMTAxMDEwMTAxMDEwMTAxMDEwMTAyMDIwMjAxMDIwMjAyMDEwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAxMDEwMTAyMDIwMjAyMDEwMjAyMDIwMTAxMDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDEwMTAxMDIwMjAyMDIwMTAyMDIwMTAxMDEwMTAyMDIwMjAyMDIwMjAyMDIwMjAyMDEwMTAxMDEwMjAyMDIwMTAyMDIwMTAxMDEwMTAxMDEwMTAxMDEwMTAyMDIwMjAyMDIwMjAyMDEwMjAyMDIwMTAyMDIwMTAxMDIwMjBhMDIwMjAyMDIwMjAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAyMDIwMTAxMDIwMjAxMDIwMjAyMDIwMjAyMDEwMjAyMDIwMjAyMDIwMjAyMDEwMjAyMDIwMTAxMDIwMjAxMDIwMjAyMDIwMjAyMDIwMTAxMDEwMTAxMDEwMTAxMDIwMjAyMDIwMTAxMDIwMjAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAxMDIwMjAxMDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDEwMTAxMDQwMjAxMDEwMTAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMDAwMDAyMDAyMDAyMjIyMjIyMjIyMjIyMDIwMDIwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMDAwMDIyMDIyMjIyMjAyMDAwMDIyMDAwMjAwMDIyMDIyMjIwMDIyMDAyMDAyMDAwMjAwMDIyMDIyMDAwMDIwMDIyMjAwMDAwMjAwMDAyMDIyMDAwMDAwMjIwMjAwMjAyMjAwMDAyMjAyMDAwMDAwMjIwMjAwMjAyMjAyMjAyMjAyMDAwMDAwMjIwMjAwMjAyMjIyMjIyMjAyMjIyMjAyMjAwMDAwMjIwMDAwMjAyMjAyMDAwMDAwMDAwMDAwMDIwMDAwMDAyMjAyMDAyMDIyMjIyMjIyMDIwMDAyMDAyMjAyMDAwMDAwMDAyMDIyMDIwMDIwMDAyMDIyMDAwMDAwMDAwMDIyMjIwMDAwMDIyMDIyMDIwMDAwMDAwMDIwMjIwMjAwMDIyMDIyMjIyMjIyMDIwMDAwMDAwMjAwMDIyMDAyMDAwMDAwMjAwMDAwMDAwMDAwMDIyMDAyMjAwMDAwMDAwMjAwMDAwMDIwMDAyMDAyMjAwMDAwMDAyMDIyMjIyMjAyMDAyMDAyMjAwMDAwMDAwMDAwMDAwMDAwMDAyMDAyMjAwMjAwMDAwMDAwMDAwMDAwMDAyMjAyMjAyMjAwMDAwMDAwMDAwMDAwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile43",
+            "myTiles.tile78",
+            "myTiles.tile105",
+            "myTiles.tile106",
+            "myTiles.tile108",
+            "myTiles.tile109",
+            "myTiles.tile110",
+            "myTiles.tile111",
+            "myTiles.tile107",
+            "myTiles.tile114",
+            "myTiles.tile115"
+        ],
+        "displayName": "Maze boss level"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
