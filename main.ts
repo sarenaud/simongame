@@ -103,80 +103,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Dirt3`, function (sprite, loc
         tiles.placeOnTile(MySprite_7, tiles.getTileLocation(42, 18))
         doorNPC = sprites.create(assets.image`doorSprite`, SpriteKind.npc)
         tiles.placeOnTile(doorNPC, tiles.getTileLocation(77, 55))
-        Enemy1 = sprites.create(assets.image`tunnel worm`, SpriteKind.Enemy)
-        statusbar2 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar2.attachToSprite(Enemy1)
-        tiles.placeOnTile(Enemy1, tiles.getTileLocation(28, 54))
-        Enemy2 = sprites.create(assets.image`tunnel worm2`, SpriteKind.Enemy)
-        statusbar3 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar3.attachToSprite(Enemy2)
-        tiles.placeOnTile(Enemy2, tiles.getTileLocation(32, 54))
-        Enemy3 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
-        statusbar4 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar4.attachToSprite(Enemy3)
-        tiles.placeOnTile(Enemy3, tiles.getTileLocation(43, 51))
-        Enemy4 = sprites.create(assets.image`kind monster`, SpriteKind.Enemy)
-        statusbar5 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar5.attachToSprite(Enemy4)
-        tiles.placeOnTile(Enemy4, tiles.getTileLocation(57, 45))
-        Enemy5 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
-        statusbar6 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar6.attachToSprite(Enemy5)
-        tiles.placeOnTile(Enemy5, tiles.getTileLocation(27, 60))
-        Enemy6 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
-        statusbar7 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar7.attachToSprite(Enemy6)
-        tiles.placeOnTile(Enemy6, tiles.getTileLocation(49, 51))
-        Enemy7 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
-        statusbar8 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar8.attachToSprite(Enemy7)
-        tiles.placeOnTile(Enemy7, tiles.getTileLocation(46, 55))
-        Enemy8 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
-        statusbar9 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar9.attachToSprite(Enemy8)
-        tiles.placeOnTile(Enemy8, tiles.getTileLocation(54, 39))
-        Enemy9 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
-        statusbar10 = statusbars.create(20, 4, StatusBarKind.Health)
-        statusbar10.attachToSprite(Enemy9)
-        tiles.placeOnTile(Enemy9, tiles.getTileLocation(68, 39))
-    }
-    if (spriteutils.distanceBetween(mySprite, Enemy3) > 100) {
-        Enemy3.follow(mySprite)
-    } else {
-        Enemy3.follow(null)
-    }
-    if (spriteutils.distanceBetween(mySprite, Enemy4) > 100) {
-        Enemy4.follow(mySprite)
-    } else {
-        Enemy4.follow(null)
-    }
-    if (spriteutils.distanceBetween(mySprite, Enemy5) > 100) {
-        Enemy5.follow(mySprite)
-    } else {
-        Enemy5.follow(null)
-    }
-    if (spriteutils.distanceBetween(mySprite, Enemy6) > 100) {
-        Enemy6.follow(mySprite)
-    } else {
-        Enemy6.follow(null)
-    }
-    if (spriteutils.distanceBetween(mySprite, Enemy7) > 100) {
-        Enemy7.follow(mySprite)
-    } else {
-        Enemy7.follow(null)
-    }
-    if (spriteutils.distanceBetween(mySprite, Enemy8) > 100) {
-        Enemy8.follow(mySprite)
-    } else {
-        Enemy8.follow(null)
-    }
-    if (spriteutils.distanceBetween(mySprite, Enemy9) > 100) {
-        Enemy9.follow(mySprite)
-    } else {
-        Enemy9.follow(null)
-    }
-    if (true) {
-    	
     }
 })
 function lantern_on_type1 (x_tile: number, y_tile: number, lantern_sprite: Sprite) {
@@ -964,6 +890,14 @@ let lantern2: Sprite = null
 let lantern1: Sprite = null
 let mysprite_4: Sprite = null
 let NPC10: Sprite = null
+let MySprite_7: Sprite = null
+let MySprite6: Sprite = null
+let Mysprite_5: Sprite = null
+let doorNPC: Sprite = null
+let mySprite3: Sprite = null
+let mysprite2: Sprite = null
+let maps: tiles.TileMapData[] = []
+let mySprite: Sprite = null
 let statusbar10: StatusBarSprite = null
 let Enemy9: Sprite = null
 let statusbar9: StatusBarSprite = null
@@ -982,15 +916,45 @@ let statusbar3: StatusBarSprite = null
 let Enemy2: Sprite = null
 let statusbar2: StatusBarSprite = null
 let Enemy1: Sprite = null
-let MySprite_7: Sprite = null
-let MySprite6: Sprite = null
-let Mysprite_5: Sprite = null
-let doorNPC: Sprite = null
-let mySprite3: Sprite = null
-let mysprite2: Sprite = null
 let level = 0
-let maps: tiles.TileMapData[] = []
-let mySprite: Sprite = null
+if (level == 0) {
+    Enemy1 = sprites.create(assets.image`tunnel worm`, SpriteKind.Enemy)
+    statusbar2 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar2.attachToSprite(Enemy1)
+    tiles.placeOnTile(Enemy1, tiles.getTileLocation(28, 54))
+    Enemy2 = sprites.create(assets.image`tunnel worm2`, SpriteKind.Enemy)
+    statusbar3 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar3.attachToSprite(Enemy2)
+    tiles.placeOnTile(Enemy2, tiles.getTileLocation(32, 54))
+    Enemy3 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+    statusbar4 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar4.attachToSprite(Enemy3)
+    tiles.placeOnTile(Enemy3, tiles.getTileLocation(43, 51))
+    Enemy4 = sprites.create(assets.image`kind monster`, SpriteKind.Enemy)
+    statusbar5 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar5.attachToSprite(Enemy4)
+    tiles.placeOnTile(Enemy4, tiles.getTileLocation(57, 45))
+    Enemy5 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+    statusbar6 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar6.attachToSprite(Enemy5)
+    tiles.placeOnTile(Enemy5, tiles.getTileLocation(27, 60))
+    Enemy6 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+    statusbar7 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar7.attachToSprite(Enemy6)
+    tiles.placeOnTile(Enemy6, tiles.getTileLocation(49, 51))
+    Enemy7 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+    statusbar8 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar8.attachToSprite(Enemy7)
+    tiles.placeOnTile(Enemy7, tiles.getTileLocation(46, 55))
+    Enemy8 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+    statusbar9 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar9.attachToSprite(Enemy8)
+    tiles.placeOnTile(Enemy8, tiles.getTileLocation(54, 39))
+    Enemy9 = sprites.create(assets.image`tall monster`, SpriteKind.Enemy)
+    statusbar10 = statusbars.create(20, 4, StatusBarKind.Health)
+    statusbar10.attachToSprite(Enemy9)
+    tiles.placeOnTile(Enemy9, tiles.getTileLocation(68, 39))
+}
 Render.setViewMode(ViewMode.tilemapView)
 mySprite = Render.getRenderSpriteVariable()
 maps = [
@@ -1041,6 +1005,45 @@ statusbar.value = 80
 let MotherSprite = sprites.create(assets.image`mom`, SpriteKind.Player)
 MotherSprite.setScale(2, ScaleAnchor.Middle)
 info.startCountdown(900)
+forever(function () {
+    if (level == 0) {
+        if (spriteutils.distanceBetween(mySprite, Enemy3) > 30) {
+            Enemy3.follow(mySprite)
+        } else {
+            Enemy3.follow(null)
+        }
+        if (spriteutils.distanceBetween(mySprite, Enemy4) > 30) {
+            Enemy4.follow(mySprite)
+        } else {
+            Enemy4.follow(null)
+        }
+        if (spriteutils.distanceBetween(mySprite, Enemy5) > 30) {
+            Enemy5.follow(mySprite)
+        } else {
+            Enemy5.follow(null)
+        }
+        if (spriteutils.distanceBetween(mySprite, Enemy6) > 30) {
+            Enemy6.follow(mySprite)
+        } else {
+            Enemy6.follow(null)
+        }
+        if (spriteutils.distanceBetween(mySprite, Enemy7) > 30) {
+            Enemy7.follow(mySprite)
+        } else {
+            Enemy7.follow(null)
+        }
+        if (spriteutils.distanceBetween(mySprite, Enemy8) < 50) {
+            Enemy8.follow(mySprite)
+        } else {
+            Enemy8.follow(null)
+        }
+        if (spriteutils.distanceBetween(mySprite, Enemy9) > 30) {
+            Enemy9.follow(mySprite)
+        } else {
+            Enemy9.follow(null)
+        }
+    }
+})
 forever(function () {
 	
 })
