@@ -84,7 +84,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Door for house 3`, function (
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Dirt3`, function (sprite, location) {
-    if (level == 1) {
+    if (controller.A.isPressed()) {
         tiles.setCurrentTilemap(maps[0])
         mySprite.setPosition(1145, 345)
         level = 0
@@ -139,6 +139,44 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Dirt3`, function (sprite, loc
         statusbar10 = statusbars.create(20, 4, StatusBarKind.Health)
         statusbar10.attachToSprite(Enemy9)
         tiles.placeOnTile(Enemy9, tiles.getTileLocation(68, 39))
+    }
+    if (spriteutils.distanceBetween(mySprite, Enemy3) > 100) {
+        Enemy3.follow(mySprite)
+    } else {
+        Enemy3.follow(null)
+    }
+    if (spriteutils.distanceBetween(mySprite, Enemy4) > 100) {
+        Enemy4.follow(mySprite)
+    } else {
+        Enemy4.follow(null)
+    }
+    if (spriteutils.distanceBetween(mySprite, Enemy5) > 100) {
+        Enemy5.follow(mySprite)
+    } else {
+        Enemy5.follow(null)
+    }
+    if (spriteutils.distanceBetween(mySprite, Enemy6) > 100) {
+        Enemy6.follow(mySprite)
+    } else {
+        Enemy6.follow(null)
+    }
+    if (spriteutils.distanceBetween(mySprite, Enemy7) > 100) {
+        Enemy7.follow(mySprite)
+    } else {
+        Enemy7.follow(null)
+    }
+    if (spriteutils.distanceBetween(mySprite, Enemy8) > 100) {
+        Enemy8.follow(mySprite)
+    } else {
+        Enemy8.follow(null)
+    }
+    if (spriteutils.distanceBetween(mySprite, Enemy9) > 100) {
+        Enemy9.follow(mySprite)
+    } else {
+        Enemy9.follow(null)
+    }
+    if (true) {
+    	
     }
 })
 function lantern_on_type1 (x_tile: number, y_tile: number, lantern_sprite: Sprite) {
@@ -885,7 +923,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile26`, function (sprite, 
             tiles.placeOnTile(mySprite, tiles.getTileLocation(13, 22))
             controller.moveSprite(mySprite, 100, 100)
             mySprite.ay = 0
-            Render.setViewMode(ViewMode.raycastingView)
             multilights.removeLightSource(mySprite)
             multilights.addLightSource(
             mySprite,
@@ -1002,7 +1039,11 @@ statusbar.setBarSize(40, 4)
 statusbar.setOffsetPadding(-9, 10)
 statusbar.value = 80
 let MotherSprite = sprites.create(assets.image`mom`, SpriteKind.Player)
-MotherSprite.follow(mySprite)
+MotherSprite.setScale(2, ScaleAnchor.Middle)
+info.startCountdown(900)
+forever(function () {
+	
+})
 forever(function () {
     if (level != 0) {
         sprites.destroyAllSpritesOfKind(SpriteKind.npc)
@@ -1015,6 +1056,13 @@ forever(function () {
     }
     if (level != 10) {
         sprites.destroyAllSpritesOfKind(SpriteKind.npc2)
+    }
+})
+forever(function () {
+    if (spriteutils.distanceBetween(mySprite, MotherSprite) > 30) {
+        MotherSprite.follow(mySprite)
+    } else {
+        MotherSprite.follow(null)
     }
 })
 forever(function () {

@@ -7,7 +7,8 @@
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
         "ArcadeMIDI": "github:UnsignedArduino/ArcadeMIDI#af121437d59fd6b2cec54501ac437db1eaa766f5",
         "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
-        "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.18"
+        "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.18",
+        "arcade-sprite-util": "github:jwunderl/arcade-sprite-util#v0.4.1"
     },
     "files": [
         "main.blocks",
