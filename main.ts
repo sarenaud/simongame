@@ -885,6 +885,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile26`, function (sprite, 
             tiles.placeOnTile(mySprite, tiles.getTileLocation(13, 22))
             controller.moveSprite(mySprite, 100, 100)
             mySprite.ay = 0
+            Render.setViewMode(ViewMode.raycastingView)
             multilights.removeLightSource(mySprite)
             multilights.addLightSource(
             mySprite,
@@ -950,9 +951,11 @@ let Mysprite_5: Sprite = null
 let doorNPC: Sprite = null
 let mySprite3: Sprite = null
 let mysprite2: Sprite = null
-let mySprite: Sprite = null
 let level = 0
 let maps: tiles.TileMapData[] = []
+let mySprite: Sprite = null
+Render.setViewMode(ViewMode.tilemapView)
+mySprite = Render.getRenderSpriteVariable()
 maps = [
 tilemap`overworld`,
 tilemap`Character house`,
